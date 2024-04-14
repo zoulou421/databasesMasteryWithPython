@@ -1,7 +1,7 @@
 """
 You've 2 options: memory storage or disk storage with json file
 """
-from tinydb import TinyDB
+from tinydb import TinyDB, Query, where  # added Query and where   => to make a search
 
 # the following import will allow you to use MEMORY STORAGE
 from tinydb.storages import MemoryStorage
@@ -14,7 +14,12 @@ from tinydb.storages import MemoryStorage
 db = TinyDB('data_tinydb.json', indent=4)
 # db.insert({"name": "Bonevy", "Score": 100})
 # Multiline insert
-db.insert_multiple([
+"""db.insert_multiple([
     {"name": "Bonevy", "Score": 100},
     {"name": "Laurore", "Score": 900}
-])
+])"""
+
+# SEARCH
+User = Query()
+my_user = db.search(User.name == "Bonevy")
+print(my_user)
