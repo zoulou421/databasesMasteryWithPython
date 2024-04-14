@@ -27,3 +27,11 @@ print(my_user)
 # USE CONDITION
 higher_scores = db.search(where("Score") > 100)
 print(higher_scores)
+
+name1 = db.search(where("name") == "Bonevy")
+print(name1)
+
+print(db.contains(User.name == "Laurore"))
+
+print(db.count(User.name == "Laurore"))
+
