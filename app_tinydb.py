@@ -21,5 +21,9 @@ db = TinyDB('data_tinydb.json', indent=4)
 
 # SEARCH
 User = Query()
-my_user = db.search(User.name == "Bonevy")
+my_user = db.search(User.name == "Bonevy")  # replace db.search to get =>for unique retrieve//unique object
 print(my_user)
+
+# USE CONDITION
+higher_scores = db.search(where("Score") > 100)
+print(higher_scores)
