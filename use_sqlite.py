@@ -41,3 +41,5 @@ myCursor.execute("DELETE FROM employees WHERE first_name='Bonevy'")
 
 conn.commit()
 conn.close()  # close connection
+
+#link EXTERNAL SQLITE DOWNLOAD: https://sqlitebrowser.org/dl/
