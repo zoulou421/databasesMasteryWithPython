@@ -1,4 +1,4 @@
-# Understand how to use databases with Python 
+# How to use databases with Python 
 
 Note: Files in this  project are enough documented.
 Every file almost represent a small project.
@@ -18,7 +18,7 @@ How to manipulate SQL REQUEST.
 
 [Documentation](https://docs.python.org/3/library/sqlite3.html)
 
-![tinydb.png](tinydb.png)
+![formationkilo.png](formationkilo.png)
 
 ## 🚀 About Author
 Bonevy BEBY is a Software Engineer,an Accross Plateforms Archictecturer and a Trainer. He's also passionnate with DevOPs and Cloud Services.
