@@ -1,0 +1,27 @@
+{
+    "Users": {
+        "1": {
+            "name": "Bonevy",
+            "salary": 15000000
+        },
+        "2": {
+            "name": "Laurore",
+            "salary": 20000000
+        },
+        "3": {
+            "name": "Ketsia",
+            "salary": 8000000
+        }
+    },
+    "Roles": {
+        "1": {
+            "name": "Java_Dev"
+        },
+        "2": {
+            "name": "Python_Dev"
+        },
+        "3": {
+            "name": "DotNet_Dev"
+        }
+    }
+}
