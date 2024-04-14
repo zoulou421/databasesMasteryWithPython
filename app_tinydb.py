@@ -28,10 +28,26 @@ print(my_user)
 higher_scores = db.search(where("Score") > 100)
 print(higher_scores)
 
-name1 = db.search(where("name") == "Bonevy")
+'''name1 = db.search(where("name") == "Bonevy")
 print(name1)
 
 print(db.contains(User.name == "Laurore"))
 
-print(db.count(User.name == "Laurore"))
+# COUNT
+print(db.count(User.name == "Laurore"))'''
 
+'''
+# UPDATE
+db.update({"Score": 999}, where('name') == 'Laurore')
+
+db.update({"roles": ["Senior"]})  # every user updated and field roles added
+db.update({"roles": ["Python_Dev"]}, where('name') == 'Laurore') #role changed to Python_Dev
+'''
+# Other method of update:upsert
+db.upsert({"name": "Ketsia", "Score": 100, "roles": ["Junior"]}, where('name') == "Laurore")
+
+# REMOVE
+db.remove(where('Score') == 1003)
+
+#REMOVE DATA :truncate()
+db.truncate()
